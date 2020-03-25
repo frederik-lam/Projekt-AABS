@@ -85,7 +85,11 @@ for cislo = cisla
         x(i,:) = x(i,:) - mean(x(i,:));
         
         % volání algoritmu pro detekci QRS
+<<<<<<< HEAD
         QRS = detectQRS(x(i,:),fvz); % detekce QRS prahovanim puvodniho EKG
+=======
+        QRS = detectQRS(fvz,x(i,:)); % detekce QRS prahovanim puvodniho EKG
+>>>>>>> 355b2fd826c60834a0006aa379846ce3d1974d2e
         
         % kresba pro dva vybrane signaly z databaze (pro ilustraci)
         if cislo == 1 || cislo == 117
